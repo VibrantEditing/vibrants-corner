@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width", initial-scale="1.0">
+      <title>Vibrant's Corner</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/82ef410da7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" width="125px"></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="mailto: vibrantsvideoediting@gmail.com">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="bag.html" class="navbar"><img src="images/bag.png" width="27.5px" height="30px"></a>
+        <img src="images/bar.png" class="menu-icon" class="navbar" onclick="menutoggle()">
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <h1>Payment Method</h1>
+          <h3>Exclusively CashApp - Scan to pay</h3>
+        </div>
+        <div class="col-2">
+          <img src="images/IMG_0881.PNG">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="categories">
+  <div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+      <div class="col-3">
+        <a href=""><img src="images/shortlength.png"></a>
+        <h4>Short Montage</h4>
+        <div class="rating">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$3.99</p>
+      </div>
+      <div class="col-3">
+        <a href=""><img src="images/regularlength.png"></a>
+        <h4>Regular Montage</h4>
+        <div class="rating">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$8.99</p>
+      </div>
+      <div class="col-3">
+        <a href=""><img src="images/teamlength.png"></a>
+        <h4>Long Montage</h4>
+        <div class="rating">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$13.99</p>
+      </div>
+    </div>
+      <h2 class="title">Latest Products</h2>
+      <div class="row">
+        <div class="col-3">
+          <a href=""><img src="images/basicthumbnail.png"></a>
+          <h4>Thumbnail</h4>
+          <div class="rating">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$0.99</p>
+        </div>
+        <div class="col-3">
+          <a href=""><img src="images/thumbnail.png"></a>
+          <h4>Detailed Thumbnail</h4>
+          <div class="rating">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$1.49</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="brands">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <a href="https://cash.app/" target="_blank"><img src="images/cashapp.png"></a>
+        </div>
+        <div class="col-4">
+          <a href="https://youtube.com/" target="_blank"><img src="images/youtube.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <ul>
+      <div class="footer-title">
+        <h2>Follow Me</h2>
+      </div>
+      <li><a href="https://www.youtube.com/channel/UCxN_q1-KwxspZe3r6-h676g" target="_blank"><img src="images/yt.png"></a></li>
+      <li><a href="https://www.instagram.com/svvy.vibrant/" target="_blank"><img src="images/ig.png"></a></li>
+      <li><a href="https://twitter.com/SVVY_Vibrant/" target="_blank"><img src="images/tw.png"></a></li>
+    </ul>
+  </div>
+    <div class="footer-email">
+      <a href="mailto: vibrantsvideoediting@gmail.com"><h4>Email: vibrantsvideoediting@gmail.com</h4></a>
+    </div>
+  <div class="copyright">
+    <h5>Vibrant's Corner 2022&copy;</h5>
+  </div>
+</div>
+
+<script>
+  var MenuItems = document.getElementById("MenuItems");
+
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle(){
+    if(MenuItems.style.maxHeight == "0px")
+    {
+      MenuItems.style.maxHeight = "200px"
+    }
+    else
+    {
+      MenuItems.style.maxHeight = "0px"
+    }
+  }
+</script>
+
+  </body>
+</html>
